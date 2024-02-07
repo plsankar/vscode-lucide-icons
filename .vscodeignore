@@ -1,0 +1,17 @@
+.vscode/**
+.vscode-test/**
+src/**
+.gitignore
+.yarnrc
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/.eslintrc.json
+**/*.map
+**/*.ts
+**/.vscode-test.*
+
+node_modules/lucide-static/dist/**/*.*
+node_modules/lucide-static/font/**/*.*
+node_modules/lucide-static/sprite.svg
+node_modules/lucide-static/rollup.config.mjs
+node_modules/lucide-static/icon-nodes.json
