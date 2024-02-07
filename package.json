@@ -7,6 +7,7 @@
     "type": "git",
     "url": "https://github.com/plsankar/vscode-lucide-icons.git"
   },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.86.0"
   },
