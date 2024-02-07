@@ -3,6 +3,7 @@
   "displayName": "Lucide Icons",
   "description": "Add Lucide icons to your project",
   "version": "0.0.1",
+  "publisher": "Lakshmisankar",
   "repository": {
     "type": "git",
     "url": "https://github.com/plsankar/vscode-lucide-icons.git"
