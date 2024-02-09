@@ -24,13 +24,13 @@ Install the extension from the [VSCode Marketplace](https://marketplace.visualst
 Run the command `Lucide Icons: Browse Icons Library` to open the icons library.
 
 <p align="center" width="100%">
-	<img alt="Vscode Lucide Icons Extension" src="vscode-lucide-icons-extension-1.jpg">
+	<img alt="Vscode Lucide Icons Extension" src="vscode-lucide-icons-1.jpg">
 </P>
 
 After Selecting the desired icon you can choose the method to add the icon
 
 <p align="center" width="100%">
-	<img alt="Vscode Lucide Icons Extension" src="vscode-lucide-icons-extension-2.jpg">
+	<img alt="Vscode Lucide Icons Extension" src="vscode-lucide-icons-2.jpg">
 </P>
 
 ## Development
