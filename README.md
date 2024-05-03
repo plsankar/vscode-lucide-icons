@@ -1,5 +1,9 @@
 # Vscode Lucide Icons Extension
 
+<p align="center" width="100%">
+	<img alt="Vscode Lucide Icons Extension" src="https://raw.githubusercontent.com/plsankar/vscode-lucide-icons/master/vscode-lucide-icons-1.jpg">
+</p>
+
 Use Lucide icons directly in Visual Studio Code!
 
 This is not a official extension from [lucide.dev](https://lucide.dev/)
@@ -25,13 +29,13 @@ Run the command `Lucide Icons: Browse Icons Library` to open the icons library.
 
 <p align="center" width="100%">
 	<img alt="Vscode Lucide Icons Extension" src="https://raw.githubusercontent.com/plsankar/vscode-lucide-icons/master/vscode-lucide-icons-1.jpg">
-</P>
+</p>
 
 After Selecting the desired icon you can choose the method to add the icon
 
 <p align="center" width="100%">
 	<img alt="Vscode Lucide Icons Extension" src="https://raw.githubusercontent.com/plsankar/vscode-lucide-icons/master/vscode-lucide-icons-2.jpg">
-</P>
+</p>
 
 ## Development
 
