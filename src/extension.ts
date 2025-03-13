@@ -1,9 +1,7 @@
 import * as vscode from "vscode";
-import { consolePanel } from "./output-channel";
 import path, { dirname } from "path";
 import { existsSync } from "fs";
 import { readFile } from "fs/promises";
-import { pathToFileURL } from "url";
 import { toTitleCase } from "./utils";
 
 const EXTENSION_PATH = dirname(__dirname);
