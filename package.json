@@ -2,9 +2,9 @@
   "name": "vscode-lucide-icons",
   "displayName": "Lucide Icons",
   "description": "Add Lucide icons to your project",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "Lakshmisankar",
-  "icon": "images/vscode-lucide-icon.png",
+  "icon": "images/vscode-lucide-icon.jpg",
   "repository": {
     "type": "git",
     "url": "https://github.com/plsankar/vscode-lucide-icons.git"
@@ -35,18 +35,17 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.10",
-    "@types/node": "~22.13.10",
-    "@types/vscode": "^1.98.0",
-    "@typescript-eslint/eslint-plugin": "^8.26.1",
-    "@typescript-eslint/parser": "^8.26.1",
-    "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1",
-    "eslint": "^9.22.0",
-    "typescript": "^5.8.2"
+    "@types/vscode": "^1.86.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.9"
   },
   "dependencies": {
     "lucide-static": "^0.479.0"
-  },
-  "packageManager": "pnpm@10.6.3"
+  }
 }
