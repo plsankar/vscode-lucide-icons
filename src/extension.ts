@@ -75,6 +75,32 @@ async function handleBrowseCommand() {
 export function activate(context: vscode.ExtensionContext) {
     let disposable = vscode.commands.registerCommand("vscode-lucide-icons.browse", handleBrowseCommand);
     context.subscriptions.push(disposable);
+
+    const hasAskedForReview = context.globalState.get("hasAskedForReview");
+
+    if (!hasAskedForReview) {
+        setTimeout(() => {
+            vscode.window
+                .showInformationMessage(
+                    "Loving Lucide Icons? Support the extenstion by leaving a review!",
+                    "Leave a Review",
+                    "Maybe Later",
+                    "Never"
+                )
+                .then((selection) => {
+                    if (selection === "Leave a Review") {
+                        vscode.env.openExternal(
+                            vscode.Uri.parse(
+                                "https://marketplace.visualstudio.com/items?itemName=Lakshmisankar.vscode-lucide-icons&ssr=false#review-details"
+                            )
+                        );
+                        context.globalState.update("hasAskedForReview", true);
+                    } else if (selection === "Never") {
+                        context.globalState.update("hasAskedForReview", true);
+                    }
+                });
+        }, 1500);
+    }
 }
 
 export function deactivate() {}
