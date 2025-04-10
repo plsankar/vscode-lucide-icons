@@ -1,51 +1,53 @@
 {
-  "name": "vscode-lucide-icons",
-  "displayName": "Lucide Icons",
-  "description": "Add Lucide icons to your project",
-  "version": "0.0.5",
-  "publisher": "Lakshmisankar",
-  "icon": "images/vscode-lucide-icon.jpg",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/plsankar/vscode-lucide-icons.git"
-  },
-  "license": "MIT",
-  "engines": {
-    "vscode": "^1.86.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "vscode-lucide-icons.browse",
-        "title": "Lucide Icons: Browse Icons Library"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
-    "test": "vscode-test"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.86.0",
-    "@types/mocha": "^10.0.6",
-    "@types/node": "18.x",
-    "@typescript-eslint/eslint-plugin": "^6.19.1",
-    "@typescript-eslint/parser": "^6.19.1",
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3",
-    "@vscode/test-cli": "^0.0.4",
-    "@vscode/test-electron": "^2.3.9"
-  },
-  "dependencies": {
-    "lucide-static": "^0.479.0"
-  }
+    "name": "vscode-lucide-icons",
+    "displayName": "Lucide Icons",
+    "description": "Add Lucide icons to your project",
+    "version": "0.0.5",
+    "publisher": "Lakshmisankar",
+    "icon": "images/vscode-lucide-icon.jpg",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/plsankar/vscode-lucide-icons.git"
+    },
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.86.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-lucide-icons.browse",
+                "title": "Lucide Icons: Browse Icons Library"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "generate-svgs": "node dev/generate-svgs.js",
+        "compile": "tsc -p ./",
+        "precompile": "npm run generate-svgs",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.86.0",
+        "@types/mocha": "^10.0.6",
+        "@types/node": "18.x",
+        "@typescript-eslint/eslint-plugin": "^6.19.1",
+        "@typescript-eslint/parser": "^6.19.1",
+        "eslint": "^8.56.0",
+        "typescript": "^5.3.3",
+        "@vscode/test-cli": "^0.0.4",
+        "@vscode/test-electron": "^2.3.9"
+    },
+    "dependencies": {
+        "lucide-static": "^0.479.0"
+    }
 }

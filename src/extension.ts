@@ -25,11 +25,14 @@ async function handleBrowseCommand() {
     }
 
     const selectedIcon = await vscode.window.showQuickPick(
-        Object.keys(tags).map((key, index) => {
+        Object.keys(tags).map((key) => {
             return {
                 label: key,
                 detail: tags[key].join(", "),
-                iconPath: vscode.Uri.file(path.resolve(LUCIDE_STATIC_ICONS_PATH, `${key}.svg`)),
+                iconPath: {
+                    light: vscode.Uri.file(path.resolve(LUCIDE_STATIC_ICONS_PATH, `${key}.svg`)),
+                    dark: vscode.Uri.file(path.resolve(LUCIDE_STATIC_ICONS_PATH, `${key}-white.svg`)),
+                },
                 id: key,
             };
         }),
